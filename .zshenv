@@ -1,0 +1,6 @@
+GOPATH=$HOME/go
+PATH=$GOPATH:$GOPATH/bin:$PATH
+PATH=$HOME/anaconda3/bin:$PATH
+
+TERMINAL=urxvt
+EDITOR=nano
