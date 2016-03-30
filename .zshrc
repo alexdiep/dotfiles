@@ -45,6 +45,10 @@ autoload -U promptinit
 promptinit
 prompt redhat
 
+# Make the .cache folder
+if ! [[ -d ~/.cache/zsh ]]; then
+	mkdir --parents ~/.cache/zsh
+fi
 
 ### Dir stack
 DIRSTACKFILE="$HOME/.cache/zsh/dirs"

@@ -38,4 +38,9 @@ fi
 # exec xterm -geometry 80x66+0+0 -name login
 
 compton -b
+
+if ! [[ -d ~/.logs ]]; then
+	mkdir ~/.logs
+fi
+
 exec i3 -V >> ~/.logs/i3log-$(date +'%F-%k-%M-%S') 2>&1
