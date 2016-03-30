@@ -46,7 +46,7 @@ promptinit
 prompt redhat
 
 # Make the .cache folder
-if ! [[ -d ~/.cache/zsh ]]; then
+if ! [[ -d "$HOME/.cache/zsh" ]]; then
 	mkdir --parents ~/.cache/zsh
 fi
 
