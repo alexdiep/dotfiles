@@ -1,5 +1,5 @@
 ## Most of it is stolen from the Arch Linux wiki
-## Uses grml-zsh
+## Most functionality provided by grml https://grml.org/zsh/
 
 ## Fish-like syntax
 source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
@@ -38,7 +38,6 @@ alias rm='rm -i'
 # Etc aliases
 alias tree='tree -C --dirsfirst'
 alias xclip='xclip -selection clip-board'
-alias zshrc='$EDITOR ~/.zshrc'
 alias st='subl3'
 alias pm='pacaur'
 alias sudo='sudo '
