@@ -1,15 +1,11 @@
-### History 
+## History
 HISTFILE=~/.zsh_history
 HISTSIZE=1000
 SAVEHIST=1000
 setopt HIST_IGNORE_DUPS
 
 
-### Vim bindings
-bindkey -v
-
-
-### Autocomplete
+## Autocomplete
 autoload -U compinit
 compinit
 
@@ -40,7 +36,7 @@ zstyle ':completion:*:cd:*' ignore-parents parent pwd
 setopt completealiases
 
 
-### Prompts
+## Prompts
 autoload -U promptinit
 promptinit
 prompt redhat
@@ -50,7 +46,7 @@ if ! [[ -d "$HOME/.cache/zsh" ]]; then
 	mkdir --parents ~/.cache/zsh
 fi
 
-### Dir stack
+## Dir stack
 DIRSTACKFILE="$HOME/.cache/zsh/dirs"
 if [[ -f $DIRSTACKFILE ]] && [[ $#dirstack -eq 0 ]]; then
   dirstack=( ${(f)"$(< $DIRSTACKFILE)"} )
@@ -67,11 +63,7 @@ setopt autopushd pushdsilent pushdtohome
 ## Remove duplicate entries
 setopt pushdignoredups
 
-## This reverts the +/- operators.
-setopt pushdminus
-
-
-### Help command
+## Help command
 autoload -U run-help
 autoload run-help-git
 autoload run-help-svn
@@ -79,11 +71,11 @@ autoload run-help-svk
 alias help=run-help
 
 
-### Syntax Highlighting
+## Syntax Highlighting
 source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 
-### Aiiases
+## Aiiases
 alias ...=../..
 alias ....=../../..
 alias .....=../../../..
