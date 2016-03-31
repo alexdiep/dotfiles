@@ -1,3 +1,5 @@
+## Most of it is stolen from the Arch Linux wiki
+
 ## History
 HISTFILE=~/.zsh_history
 HISTSIZE=1000
@@ -41,11 +43,6 @@ autoload -U promptinit
 promptinit
 prompt redhat
 
-# Make the .cache folder
-if ! [[ -d "$HOME/.cache/zsh" ]]; then
-	mkdir --parents ~/.cache/zsh
-fi
-
 ## Dir stack
 DIRSTACKFILE="$HOME/.cache/zsh/dirs"
 if [[ -f $DIRSTACKFILE ]] && [[ $#dirstack -eq 0 ]]; then
@@ -56,12 +53,21 @@ chpwd() {
   print -l $PWD ${(u)dirstack} >$DIRSTACKFILE
 }
 
+# Make the .cache folder
+if ! [[ -d "$HOME/.cache/zsh" ]]; then
+	mkdir --parents ~/.cache/zsh
+fi
+
+
 DIRSTACKSIZE=20
 
 setopt autopushd pushdsilent pushdtohome
 
-## Remove duplicate entries
+# Remove duplicate entries
 setopt pushdignoredups
+
+# This reverts the +/- operators.
+setopt pushdminus↑
 
 ## Help command
 autoload -U run-help
