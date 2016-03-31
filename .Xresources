@@ -23,7 +23,7 @@ URxvt*cursorBlink: true
 
 ! URxvt Enable Link Support
 URxvt.perl-ext-common: default,matcher,clipboard
-URxvt.urlLauncher: firefox
+URxvt.url-launcher: firefox
 URxvt.matcher.button: 1
 !disable the fucking bell
 URxvt.insecure: false
