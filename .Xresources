@@ -2,35 +2,22 @@
 ! Also some other guy...
 
 ! URxvt Font
-URxvt.font:xft:terminus:pixelsize=14
-URxvt.boldFont:xft:terminus:bold:pixelsize=14
-URxvt.italicfont:xft:terminus:italic:pixelsize=14
-URxvt.bolditalicFont:xft:terminus:bold:italic:pixelsize=1
-URxvt*letterSpace: 1
-URxvt*allow_bold: true
-
-! URxvt Font Settings
-Xft.autohint: true
-Xft.antialias: true
-Xft.hinting: true
-Xft.hintstyle: hintslight
-Xft.rgba: rgb
-Xft.lcdfilter: lcddefault
+URxvt.font: xft:terminus:size=12
+URxvt.boldfont: xft:terminus:bold:size=12
 
 ! URxvt looks
 URxvt*scrollBar: false
 URxvt*cursorBlink: true
+URxvt*internalBorder: 16
 
 ! URxvt Enable Link Support
 URxvt.perl-ext-common: default,matcher,clipboard
-URxvt.url-launcher: firefox
+URxvt.url-launcher: firefox-beta
 URxvt.matcher.button: 1
-!disable the fucking bell
-URxvt.insecure: false
 
 ! URxvt Shortcuts
-URxvt.keysym.Shift-Control-C: perl:clipboard:copy
-URxvt.keysym.Shift-Control-V: perl:clipboard:paste
+URxvt.keysym.M-c: perl:clipboard:copy
+URxvt.keysym.M-v: perl:clipboard:paste
 
 ! URxvt Colors
 ! main
