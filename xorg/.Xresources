@@ -1,5 +1,4 @@
 ! "Borrowed" from https://github.com/savoca/dotfiles/blob/gray/home/.Xdefaults
-! https://github.com/kelaun/dotfiles/blob/master/X/.Xresources
 
 ! Font settings
 Xft.dpi: 96
@@ -21,7 +20,7 @@ URxvt*internalBorder: 16
 
 ! URxvt Enable Link Support
 URxvt.perl-ext-common: default,matcher,clipboard
-URxvt.url-launcher: firefox-beta
+URxvt.url-launcher: firefox
 URxvt.matcher.button: 1
 
 ! URxvt Shortcuts
