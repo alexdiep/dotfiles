@@ -14,6 +14,7 @@ new_window none
 new_float none
 
 smart_gaps on
+smart_borders no_gaps
 gaps inner 10
 
 # Mouse settings
@@ -132,10 +133,10 @@ client.unfocused        #747C84 #747C84 #F3F4F5 #747C84
 client.focused_inactive #747C84 #747C84 #F3F4F5 #747C84
 client.urgent           #747C84 #747C84 #F3F4F5 #747C84
  
- # Start i3bar
+# Start i3bar
 bar {
         status_command i3status -c ~/.config/i3status/config
-        tray_output none
+        tray_output primary
 
         colors {
             statusline  #F3F4F5
