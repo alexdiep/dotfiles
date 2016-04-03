@@ -7,7 +7,7 @@ source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zs
 ## Prompts
 autoload -U promptinit
 promptinit
-prompt redhat
+prompt grml
 
 ## Help command
 autoload -U run-help
