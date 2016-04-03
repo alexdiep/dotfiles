@@ -2,8 +2,8 @@
 ! Also some other guy...
 
 ! URxvt Font
-URxvt.font: xft:terminus:size=12
-URxvt.boldfont: xft:terminus:bold:size=12
+URxvt.font: xft:Terminess Powerline:size=12
+URxvt.boldfont: xft:Terminess Powerline:bold:size=12
 
 ! URxvt looks
 URxvt*scrollBar: false

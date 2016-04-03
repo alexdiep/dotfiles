@@ -6,7 +6,7 @@
 set $mod Mod4
 
 # Font
-font pango:Terminus 11px
+font pango:Terminess Powerline 11px
 
 # 0px Border Windows
 # for_window [class="(?i)subl3"] border none
