@@ -8,12 +8,17 @@ set $mod Mod4
 # Font
 font pango:Terminess Powerline 11px
 
-# 0px Border Windows
-for_window [class="Firefox"] border none
-for_window [class="Spotify"] border none
-
 # 1px Border Windows
 for_window [class="URxvt"] border 1pixel
+
+# Borders
+hide_edge_borders both
+
+new_window none
+new_float none
+
+gaps inner 15
+gaps outer 0 
 
 # Mouse settings
 # Use Mouse+$mod to drag floating windows to their wanted position
