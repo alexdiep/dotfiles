@@ -8,17 +8,13 @@ set $mod Mod4
 # Font
 font pango:Terminess Powerline 11px
 
-# 1px Border Windows
-for_window [class="URxvt"] border 1pixel
-
 # Borders
-hide_edge_borders both
-
+for_window [class="URxvt"] border 1pixel
 new_window none
 new_float none
 
-gaps inner 15
-gaps outer 0 
+smart_gaps on
+gaps inner 10
 
 # Mouse settings
 # Use Mouse+$mod to drag floating windows to their wanted position
@@ -152,3 +148,4 @@ bar {
             urgent_workspace   #747C84 #747C84 #F3F4F5
         }
 }
+
