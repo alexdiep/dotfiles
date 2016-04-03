@@ -6,15 +6,15 @@
 set $mod Mod4
 
 # Font
-font -*-terminus-*-*-*-*-*-*-*-*-*-*-*-*
+font pango:Terminus 11px
 
 # 0px Border Windows
-for_window [class="Subl3"] border none
-for_window [class="Firefox"] border none
-for_window [class="Spotify"] border none
+# for_window [class="(?i)subl3"] border none
+for_window [class="(?i)pale moon"] border none
+for_window [class="(?i)spotify"] border none
 
 # 1px Border Windows
-for_window [class="URxvt" ] border 1pixel
+for_window [class="(?i)urxvt" ] border 1pixel
 
 # Mouse settings
 # Use Mouse+$mod to drag floating windows to their wanted position
@@ -120,7 +120,7 @@ client.urgent           #747C84 #747C84 #F3F4F5 #747C84
  
  # Start i3bar
 bar {
-        status_command i3status -c ~/.config/i3/i3status.conf
+        status_command i3status -c ~/.config/i3status/config
         tray_output none
 
         colors {

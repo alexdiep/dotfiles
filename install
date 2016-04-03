@@ -4,13 +4,11 @@ SOURCE=$(dirname "$(readlink -f "$0")")
 
 cd -- "$SOURCE"
 
-# Make all of the required parent dirs
-find -type d -not -path "*/.git/*" -exec mkdir --parents "$HOME"/{} \;
-
-# Make the symlinks with all of the files
-find -type f -not -path "*/.git/*" -exec ln -sf -- "$SOURCE"/{} "$HOME"/{} \;
-
-# Yes this is bad hack
-rm "$HOME"/install
+# STOW IS MAGICAL
+stow i3
+stow nano
+stow zsh
+stow compton
+stow xorg
 
 exit
