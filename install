@@ -1,14 +1,16 @@
 #!/bin/bash
+# Refer to this if you want to know more about stow
+# http://brandon.invergo.net/news/2012-05-26-using-gnu-stow-to-manage-your-dotfiles.html
 
 SOURCE=$(dirname "$(readlink -f "$0")")
 
 cd -- "$SOURCE"
 
 # STOW IS MAGICAL
-stow i3
-stow nano
-stow zsh
-stow compton
-stow xorg
+stow i3 -t $HOME
+stow nano -t $HOME
+stow zsh -t $HOME
+stow compton -t $HOME
+stow xorg -t $HOME
 
 exit
