@@ -1,5 +1,14 @@
 ! "Borrowed" from https://github.com/savoca/dotfiles/blob/gray/home/.Xdefaults
-! Also some other guy...
+! https://github.com/kelaun/dotfiles/blob/master/X/.Xresources
+
+! Font settings
+Xft.dpi: 96
+Xft.antialias: true
+Xft.hinting: true
+Xft.rgba: rgb
+Xft.autohint: false
+Xft.hintstyle: hintslight
+Xft.lcdfilter: lcddefault
 
 ! URxvt Font
 URxvt.font: xft:Terminess Powerline:size=12
