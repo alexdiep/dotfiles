@@ -1,0 +1,39 @@
+# General options
+set imap_check_subscribed
+set imap_keepalive = 300
+unset imap_passive
+set mail_check = 60
+set mbox_type=Maildir
+
+# Sidebar
+set sidebar_width = 30
+set sidebar_delim = '|'
+set sidebar_visible = no
+set sidebar_sort = yes
+macro index b '<enter-command>toggle sidebar_visible<enter><refresh>'
+macro pager b '<enter-command>toggle sidebar_visible<enter><redraw-screen>'
+bind index,pager \CP sidebar-prev
+bind index,pager \CN sidebar-next
+bind index,pager \CO sidebar-open
+
+# Cache
+set header_cache = ~/.mutt/cache/headers
+set message_cachedir = ~/.mutt/cache/bodies
+set certificate_file = ~/.mutt/cache/certificates
+
+
+# Encrypted passwds
+source "gpg2 -dq ~/.my-mutt-settings.gpg |"
+
+# Fetch mail shortcut
+bind index G imap-fetch-mail
+
+# NANO IS BEST EDITOR
+set editor=nano
+
+# Force UTF-8 encoding
+set send_charset="us-ascii:utf-8"
+
+# View HTML
+set mailcap_path 	= ~/.mutt/mailcap
+auto_view text/html

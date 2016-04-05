@@ -12,5 +12,6 @@ stow nano -t $HOME
 stow zsh -t $HOME
 stow compton -t $HOME
 stow xorg -t $HOME
+stow mutt -t $HOME
 
 exit
