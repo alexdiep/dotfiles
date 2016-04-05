@@ -1,5 +1,3 @@
-# source ~/.mutt/muttrc
-
 set from = "$my_user_pers@gmail.com"
 set hostname = "gmail.com"
 
@@ -16,3 +14,5 @@ set record = "+[Gmail]/Sent Mail"
 set postponed = "+[Gmail]/Drafts"
 
 account-hook $folder "set imap_user=$my_user_pers@gmail.com imap_pass=$my_pass_pers"
+
+mailboxes "+A-- Personal Mailbox --"

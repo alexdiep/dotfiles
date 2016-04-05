@@ -3,13 +3,19 @@ set imap_check_subscribed
 set imap_keepalive = 300
 unset imap_passive
 set mail_check = 60
+
 set mbox_type=Maildir
+
+set ssl_starttls=yes
+set ssl_force_tls=yes
 
 # Sidebar
 set sidebar_width = 30
 set sidebar_delim = '|'
 set sidebar_visible = no
 set sidebar_sort = yes
+# set sidebar_shortpath = yes
+
 macro index b '<enter-command>toggle sidebar_visible<enter><refresh>'
 macro pager b '<enter-command>toggle sidebar_visible<enter><redraw-screen>'
 bind index,pager \CP sidebar-prev
@@ -40,7 +46,7 @@ auto_view text/html
 # Default account
 source ~/.mutt/account.work
 
-# Speed up folders switch
+# Faster account switch
 set sleep_time = 0
 
 # Accounts
