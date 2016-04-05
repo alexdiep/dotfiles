@@ -3,7 +3,7 @@ include /usr/share/nano-syntax-highlighting/*.nanorc
 
 ## Silently ignore problems with unknown directives in the nanorc file. Useful when your nanorc 
 ## file Use auto-indentation.
-set autoindent
+# set autoindent
 
 ## Use bold text instead of reverse video text.
 set boldtext
