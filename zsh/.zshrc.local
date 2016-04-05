@@ -7,7 +7,6 @@ source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zs
 ## Prompts
 autoload -U promptinit
 promptinit
-prompt grml
 
 ## Help command
 autoload -U run-help
@@ -43,6 +42,6 @@ alias pm='pacaur'
 alias sudo='sudo '
 
 # Email
-alias edumail='mutt -F ~/.mutt/outlook.edu'
-alias workmail='mutt -F ~/.mutt/gmail.work'
-alias persmail='mutt -F ~/.mutt/gmail.personal'
+alias edumail='mutt -F ~/.mutt/edu'
+alias workmail='mutt -F ~/.mutt/work'
+alias persmail='mutt -F ~/.mutt/pers'
