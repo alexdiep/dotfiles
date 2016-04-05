@@ -6,11 +6,11 @@ set hostname = "gmail.com"
 set imap_user = "$my_user_pers@gmail.com"
 set imap_pass = $my_pass_pers
 
-set smtp_url = "smtp://@my_user_pres@smtp.gmail.com:587/"
+set smtp_url = "smtp://$my_user_pers@smtp.gmail.com:587/"
 set smtp_pass = $my_pass_pers
 
 set realname = "$my_name"
-set folder = "imaps://imap.gmail.com:993"
+set folder = "imaps://$my_user_pers@imap.gmail.com:993"
 set spoolfile = "+INBOX"
 set record = "+[Gmail]/Sent Mail"
 set postponed = "+[Gmail]/Drafts"

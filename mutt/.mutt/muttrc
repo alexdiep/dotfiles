@@ -46,11 +46,7 @@ set sleep_time = 0
 # Accounts
 source '~/.mutt/account.work'
 folder-hook $folder 'source ~/.mutt/account.work'
-
-source '~/.mutt/account.pers' 
 folder-hook 'account.pers' 'source ~/.mutt/account.pers'
-
-source '~/.mutt/account.edu'
 folder-hook 'account.edu' 'source ~/.mutt/account.edu'
 
 # Marcos for switching accounts
