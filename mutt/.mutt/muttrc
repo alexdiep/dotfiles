@@ -21,7 +21,6 @@ set header_cache = ~/.mutt/cache/headers
 set message_cachedir = ~/.mutt/cache/bodies
 set certificate_file = ~/.mutt/cache/certificates
 
-
 # Encrypted passwds
 source "gpg2 -dq ~/.my-mutt-settings.gpg |"
 
@@ -37,3 +36,24 @@ set send_charset="us-ascii:utf-8"
 # View HTML
 set mailcap_path 	= ~/.mutt/mailcap
 auto_view text/html
+
+# Default account
+source ~/.mutt/account.work
+
+# Speed up folders switch
+set sleep_time = 0
+
+# Accounts
+source '~/.mutt/account.work'
+folder-hook $folder 'source ~/.mutt/account.work'
+
+source '~/.mutt/account.pers' 
+folder-hook 'account.pers' 'source ~/.mutt/account.pers'
+
+source '~/.mutt/account.edu'
+folder-hook 'account.edu' 'source ~/.mutt/account.edu'
+
+# Marcos for switching accounts
+macro index <f2> '<sync-mailbox><enter-command>source ~/.mutt/account.work<enter><change-folder>!<enter>'
+macro index <f3> '<sync-mailbox><enter-command>source ~/.mutt/account.pers<enter><change-folder>!<enter>'
+macro index <f4> '<sync-mailbox><enter-command>source ~/.mutt/account.edu<enter><change-folder>!<enter>'

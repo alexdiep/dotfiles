@@ -1,16 +1,6 @@
 ## AUR syntax highlighting
 include /usr/share/nano-syntax-highlighting/*.nanorc
 
-## Silently ignore problems with unknown directives in the nanorc file. Useful when your nanorc 
-## file Use auto-indentation.
-# set autoindent
-
-## Use bold text instead of reverse video text.
-set boldtext
-
-## Have the justify command kill whitespace at the end of lines
-set justifytrim
-
 ## Use the blank line below the titlebar as extra editing space.
 set morespace
 
@@ -30,4 +20,3 @@ set tabsize 4
 
 ## Convert typed tabs to spaces.
 set tabstospaces
-

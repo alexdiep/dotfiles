@@ -40,8 +40,3 @@ alias xclip='xclip -selection clip-board'
 # alias st='subl3'
 alias pm='pacaur'
 alias sudo='sudo '
-
-# Email
-alias edumail='mutt -F ~/.mutt/edu'
-alias workmail='mutt -F ~/.mutt/work'
-alias persmail='mutt -F ~/.mutt/pers'

@@ -1,9 +1,9 @@
-source ~/.mutt/muttrc
+# source ~/.mutt/muttrc
 
 set from = "$my_user_pers@gmail.com"
 set hostname = "gmail.com"
 
-set imap_user = "$my_user_pres@gmail.com"
+set imap_user = "$my_user_pers@gmail.com"
 set imap_pass = $my_pass_pers
 
 set smtp_url = "smtp://@my_user_pres@smtp.gmail.com:587/"
@@ -14,3 +14,5 @@ set folder = "imaps://imap.gmail.com:993"
 set spoolfile = "+INBOX"
 set record = "+[Gmail]/Sent Mail"
 set postponed = "+[Gmail]/Drafts"
+
+account-hook $folder "set imap_user=$my_user_pers@gmail.com imap_pass=$my_pass_pers"

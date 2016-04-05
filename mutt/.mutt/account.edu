@@ -1,4 +1,4 @@
-source ~/.mutt/muttrc
+# source ~/.mutt/muttrc
 
 set from = "$my_user_edu@ufl.edu"
 set hostname = "ufl.edu"
@@ -14,3 +14,5 @@ set folder = "imaps://outlook.office365.com:993"
 set spoolfile = "+INBOX"
 set record = "+Sent Mail"
 set postponed = "+Drafts"
+
+account-hook $folder "set imap_user=$my_user_edu@ufl.edu imap_pass=$my_pass_edu"
