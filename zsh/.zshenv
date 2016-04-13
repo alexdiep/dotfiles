@@ -8,7 +8,7 @@ if [[ -d "/usr/lib/ccache/bin" ]]; then
 fi
 
 # Use parallel downloading
-export PACMAN=powerpill
+# export PACMAN=powerpill
 
 export TERMINAL=urxvt
 export EDITOR=nano
