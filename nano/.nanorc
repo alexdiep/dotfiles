@@ -15,8 +15,12 @@ set smooth
 ## Don't wrap text at all.
 set nowrap
 
+## Remove help shortcuts
+set nohelp
+
 ## Use this tab size instead of the default; it must be greater than 0.
 set tabsize 4
 
 ## Convert typed tabs to spaces.
 set tabstospaces
+
