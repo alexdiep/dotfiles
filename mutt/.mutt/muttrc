@@ -34,7 +34,7 @@ source "gpg2 -dq ~/.my-mutt-settings.gpg |"
 bind index G imap-fetch-mail
 
 # NANO IS BEST EDITOR
-set editor=nano
+set editor="nano -r 72"
 
 # Force UTF-8 encoding
 set send_charset="us-ascii:utf-8"
