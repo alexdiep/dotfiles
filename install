@@ -11,7 +11,7 @@ stow i3 -t $HOME
 stow nano -t $HOME
 stow zsh -t $HOME
 stow compton -t $HOME
-stow xorg -t $HOME
+stow xorg -t $HOME --ignore=colors
 stow mutt -t $HOME
 
 exit
