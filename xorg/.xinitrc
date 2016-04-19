@@ -39,6 +39,6 @@ if ! [[ -d ~/.logs ]]; then
 	mkdir ~/.logs
 fi
 
-xrdb -I$HOME/.Xresources.d
+xrdb -I$HOME ~/.Xresources
 
 exec i3 -V >> ~/.logs/i3log-$(date +'%F-%k-%M-%S') 2>&1

@@ -28,5 +28,5 @@ URxvt.keysym.M-c: perl:clipboard:copy
 URxvt.keysym.M-v: perl:clipboard:paste
 
 ! Colors
-! #include "colors/default"
-#include "colors/solarized"
+! #include ".Xresources.d/colors/default"
+#include ".Xresources.d/colors/solarized"
