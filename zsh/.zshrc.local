@@ -37,8 +37,12 @@ alias rm='rm -i'
 # Etc aliases
 alias tree='tree -C --dirsfirst'
 alias xclip='xclip -selection clip-board'
-# alias st='subl3'
+
 alias pm='pacaur'
+
 alias sudo='sudo '
+
+# alias st='subl3'
 alias no='nano'
 alias nv='nano -v'
+alias vsc='visual-studio-code'

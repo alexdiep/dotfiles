@@ -54,7 +54,7 @@ battery 0 {
 
 volume master {
 	format = " Volume: %volume "
-	device = "hw:1"
+	device = "hw:0"
 	mixer = "Master"
 	mixer_idx = 0
 }

@@ -3,6 +3,9 @@
 # Please see http://i3wm.org/docs/userguide.html for a complete reference!
 # Inspired by https://github.com/savoca/dotfiles/blob/gray/home/.i3/config
 
+# Alt + Control
+# set $mod Mod1+Control
+# Super
 set $mod Mod4
 
 # Font
