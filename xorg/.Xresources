@@ -3,15 +3,15 @@
 ! Font settings
 Xft.dpi: 96
 Xft.antialias: true
-Xft.hinting: true
 Xft.rgba: rgb
-Xft.autohint: false
-Xft.hintstyle: hintslight
+Xft.hinting: 0
+Xft.hintstyle: hintnone
 Xft.lcdfilter: lcddefault
 
 ! URxvt Font
-URxvt.font: xft:Terminess Powerline:size=12
-URxvt.boldfont: xft:Terminess Powerline:bold:size=12
+Urxvt.letterSpace: -1
+URxvt.font: xft:Terminus:pixelsize=14
+URxct.font: xft:Terminus:bold:pixelsize=14
 
 ! URxvt looks
 URxvt*scrollBar: false
@@ -20,12 +20,12 @@ URxvt*internalBorder: 16
 
 ! URxvt Enable Link Support
 URxvt.perl-ext-common: default,matcher,clipboard
-URxvt.url-launcher: firefox
+URxvt.url-launcher: midori
 URxvt.matcher.button: 1
 
 ! URxvt Shortcuts
-URxvt.keysym.M-c: perl:clipboard:copy
-URxvt.keysym.M-v: perl:clipboard:paste
+URxvt.keysym.M-C-c: perl:clipboard:copy
+URxvt.keysym.M-C-v: perl:clipboard:paste
 
 ! Colors
 ! #include ".Xresources.d/colors/default"

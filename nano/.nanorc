@@ -1,5 +1,5 @@
 ## AUR syntax highlighting
-include /usr/share/nano-syntax-highlighting/*.nanorc
+# include /usr/share/nano-syntax-highlighting/*.nanorc
 
 ## Use the blank line below the titlebar as extra editing space.
 set morespace
@@ -16,7 +16,7 @@ set smooth
 set nowrap
 
 ## Remove help shortcuts
-set nohelp
+# set nohelp
 
 ## Use this tab size instead of the default; it must be greater than 0.
 set tabsize 4
