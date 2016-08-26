@@ -8,7 +8,7 @@ Xft.hinting: hintsight
 Xft.lcdfilter: lcddefault
 
 ! URxvt Font
-URxvt.letterSpace:-4
+URxvt.letterSpace:-2
 URxvt.font: xft:Terminus:medium:size=11
 
 ! URxvt looks
