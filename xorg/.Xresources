@@ -4,14 +4,12 @@
 Xft.dpi: 96
 Xft.antialias: true
 Xft.rgba: rgb
-Xft.hinting: 0
-Xft.hintstyle: hintnone
+Xft.hinting: hintsight
 Xft.lcdfilter: lcddefault
 
 ! URxvt Font
-Urxvt.letterSpace: -1
-URxvt.font: xft:Terminus:pixelsize=14
-URxct.font: xft:Terminus:bold:pixelsize=14
+URxvt.letterSpace:-4
+URxvt.font: xft:Terminus:medium:size=12
 
 ! URxvt looks
 URxvt*scrollBar: false

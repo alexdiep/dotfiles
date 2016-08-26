@@ -9,7 +9,7 @@
 set $mod Mod4
 
 # Font
-font pango:Terminess Powerline 11px
+font xft:Terminus 11px
 
 # Borders
 # for_window [class="URxvt"] border 1pixel
