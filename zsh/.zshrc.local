@@ -35,14 +35,7 @@ alias rm='rm -i'
 alias tree='tree -C --dirsfirst'
 alias xclip='xclip -selection clip-board'
 
-alias pm='pacaur'
-
 alias sudo='sudo '
-
-# alias st='subl3'
-alias no='nano'
-alias nv='nano -v'
-alias vsc='visual-studio-code'
 
 ## Fish-like syntax
 source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
