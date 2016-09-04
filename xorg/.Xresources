@@ -8,8 +8,8 @@ Xft.hinting: hintsight
 Xft.lcdfilter: lcddefault
 
 ! URxvt Font
-URxvt.letterSpace:-2
-URxvt.font: xft:Terminus:medium:size=10
+Urxvt.fontSpace: -2
+URxvt.font: xft:Terminus:pixelsize=11
 
 ! URxvt looks
 URxvt*scrollBar: false
