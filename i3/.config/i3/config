@@ -127,8 +127,8 @@ bindsym $mod+x exec playerctl play-pause
 bindsym $mod+c exec playerctl next
 
 # Brightness control
-bindsym XF86KbdBrightnessUp exec xbacklight -inc 10
-bindsym XF86KbdBrightnessDown exec xbacklight -dec 10
+bindsym XF86KbdBrightnessUp exec xbacklight -inc 5
+bindsym XF86KbdBrightnessDown exec xbacklight -dec 5
 
 # Colors
 #name                   #top    #border #text
