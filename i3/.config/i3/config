@@ -1,25 +1,38 @@
 # i3 config file (v4)
 #
-# Please see http://i3wm.org/docs/userguide.html for a complete reference!
-# Inspired by https://github.com/savoca/dotfiles/blob/gray/home/.i3/config
+# https://github.com/Airblader/dotfiles-manjaro/blob/master/.i3/config
 
-# Alt + Control
-# set $mod Mod1+Control
-# Super
 set $mod Mod4
+set $terminal urxvt
+
+set_from_resource $darkred     color1  #000000
+set_from_resource $red         color9  #000000
+set_from_resource $darkgreen   color2  #000000
+set_from_resource $green       color10 #000000
+set_from_resource $darkyellow  color3  #000000
+set_from_resource $yellow      color11 #000000
+set_from_resource $darkblue    color4  #000000
+set_from_resource $blue        color12 #000000
+set_from_resource $darkmagenta color5  #000000
+set_from_resource $magenta     color13 #000000
+set_from_resource $darkcyan    color6  #000000
+set_from_resource $cyan        color14 #000000
+set_from_resource $darkwhite   color7  #000000
+set_from_resource $white       color15 #000000
+# Use custom colors for black
+set $black       #282828
+set $darkblack   #1d2021
+set $transparent #00000000
 
 # Font
 font xft:Terminus 11px
 
-# Borders
-# for_window [class="URxvt"] border 1pixel
-# for_window [class="Firefox"] border 1pixel
-new_window 1pixel
-new_float 1pixel
+workspace_auto_back_and_forth yes
+force_display_urgency_hint 0 ms
+focus_on_window_activation urgent
 
-#smart_gaps on
-#smart_borders no_gaps
-#gaps inner 10
+floating_minimum_size -1 x -1
+floating_maximum_size -1 x -1
 
 # Mouse settings
 # Use Mouse+$mod to drag floating windows to their wanted position
@@ -27,7 +40,7 @@ floating_modifier $mod
 focus_follows_mouse no
 
 # start a terminal
-bindsym $mod+Return exec urxvt
+bindsym $mod+Return exec --no-startup-id $terminal
 
 # kill focused window
 bindsym $mod+q kill
@@ -117,40 +130,54 @@ bindsym $mod+Shift+r restart
 bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -b 'Yes, exit i3' 'i3-msg exit'"
 
 # Volume control
-bindsym XF86AudioRaiseVolume exec amixer set Master 5%+
-bindsym XF86AudioLowerVolume exec amixer set Master 5%-
-bindsys XF86AudioMute exec amixer set Master toggle
+bindsym XF86AudioRaiseVolume exec --no-startup-id amixer set Master 5%+
+bindsym XF86AudioLowerVolume exec --no-startup-id amixer set Master 5%-
+bindsys XF86AudioMute exec --no-startup-id amixer set Master toggle
 
 # Player control for spotify and shit
-bindsym $mod+z exec playerctl previous
-bindsym $mod+x exec playerctl play-pause
-bindsym $mod+c exec playerctl next
+bindsym $mod+z exec --no-startup-id playerctl previous
+bindsym $mod+x exec --no-startup-id playerctl play-pause
+bindsym $mod+c exec --no-startup-id  playerctl next
 
 # Brightness control
-bindsym XF86KbdBrightnessUp exec xbacklight -inc 5
-bindsym XF86KbdBrightnessDown exec xbacklight -dec 5
+# Keyboard brightness control used as a hack
+bindsym XF86KbdBrightnessUp exec --no-startup-id xbacklight -inc 5
+bindsym XF86KbdBrightnessDown exec --no-startup-id xbacklight -dec 5
+
+new_window none
 
 # Colors
-#name                   #top    #border #text
-client.focused          #747C84 #F3F4F5 #747C84 #F3F4F5
-client.unfocused        #747C84 #747C84 #F3F4F5 #747C84
-client.focused_inactive #747C84 #747C84 #F3F4F5 #747C84
-client.urgent           #747C84 #747C84 #F3F4F5 #747C84
+#                       BORDER      BACKGROUND  TEXT        INDICATOR   CHILD_BORDER
+client.focused          $black      $black      $darkwhite  $darkblack  $darkblack
+client.unfocused        $black      $black      $white      $darkblack  $darkblack
+client.focused_inactive $black      $black      $white      $darkblack  $darkblack
+client.urgent           $darkred    $darkred    $black      $darkred    $darkred
+client.background       $black
  
-# Start i3bar
 bar {
-        status_command i3status -c ~/.config/i3status/config
-        tray_output primary
+#    verbose yes
+#    status_command i3blocks
+    i3bar_command i3bar -t
+    position top
+    font xft:Terminus 11px
+    strip_workspace_numbers yes
+    separator_symbol "■"
+    bindsym button4 nop
+    bindsym button5 nop
+    tray_output eDP1
+    tray_output LVDS-0
+    tray_padding 0
+    height 34
+    colors {
+        statusline         $white
+        background         $transparent
+        separator          $transparent
 
-        colors {
-            statusline  #F3F4F5
-            background  #1C2023
-
-                #name              #border #bg     #text
-            focused_workspace  #F3F4F5 #747C84 #F3F4F5
-            active_workspace   #747C84 #747C84 #F3F4F5
-            inactive_workspace #747C84 #747C84 #F3F4F5
-            urgent_workspace   #747C84 #747C84 #F3F4F5
-        }
+#                          BORDER       BACKGROUND   TEXT
+        focused_workspace  $transparent $transparent $darkwhite
+        inactive_workspace $transparent $transparent $white
+        active_workspace   $transparent $transparent $white
+        urgent_workspace   $darkred     $darkred     $transparent
+        binding_mode       $darkred     $darkred     $transparent
+    }
 }
-
