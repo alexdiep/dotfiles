@@ -146,6 +146,16 @@ bindsym XF86KbdBrightnessDown exec --no-startup-id xbacklight -dec 5
 
 new_window none
 
+for_window [class="urxvt"] border pixel 3
+
+for_window [window_role="pop-up"] floating enable
+for_window [window_role="bubble"] floating enable
+for_window [window_role="task_dialog"] floating enable
+for_window [window_role="Preferences"] floating enable
+
+for_window [window_type="dialog"] floating enable
+for_window [window_type="menu"] floating enable
+
 # Colors
 #                       BORDER      BACKGROUND  TEXT        INDICATOR   CHILD_BORDER
 client.focused          $black      $black      $darkwhite  $darkblack  $darkblack
