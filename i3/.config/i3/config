@@ -181,3 +181,6 @@ bar {
         binding_mode       $darkred     $darkred     $transparent
     }
 }
+
+# AUTOSTART
+exec --no-startup-id compton -b
