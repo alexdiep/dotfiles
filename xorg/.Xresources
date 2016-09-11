@@ -18,7 +18,7 @@ URxvt*internalBorder: 16
 
 ! URxvt Enable Link Support
 URxvt.perl-ext-common: default,matcher,clipboard
-URxvt.url-launcher: midori
+URxvt.url-launcher: firefox
 URxvt.matcher.button: 1
 
 ! URxvt Shortcuts
