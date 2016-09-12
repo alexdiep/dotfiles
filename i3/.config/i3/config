@@ -170,13 +170,8 @@ bar {
     i3bar_command i3bar -t
     position top
     font xft:Hack 11px
-    strip_workspace_numbers yes
-    separator_symbol "■"
     bindsym button4 nop
     bindsym button5 nop
-    tray_output eDP1
-    tray_output LVDS-0
-    tray_padding 0
     height 34
     colors {
         statusline         $white
@@ -200,5 +195,6 @@ exec --no-startup-id nm-applet &
 exec --no-startup-id xedgewarp -b
 
 exec --no-startup-id gnome-settings-daemon &
+exec --no-startup-id gnome-sound-applet &
 
 exec --no-startup-id dunst &
