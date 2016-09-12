@@ -24,3 +24,6 @@ alias xclip='xclip -selection clip-board'
 
 ## Fish-like syntax
 source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+
+## Git aliases
+source $HOME/.git.plugin.zsh
