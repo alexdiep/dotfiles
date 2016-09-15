@@ -2,4 +2,6 @@
 export TERMINAL=urxvt
 export EDITOR=nano
 
-export GOROOT=$HOME/gocode
+export GOPATH=$HOME/go
+export PATH=$PATH:$GOROOT/bin:$GOPATH/bin
+
