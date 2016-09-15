@@ -21,6 +21,7 @@ alias ......=../../../../..
 # Etc aliases
 alias tree='tree -C --dirsfirst'
 alias xclip='xclip -selection clip-board'
+alias rclone='rclone --stats 5s'
 
 ## Fish-like syntax
 source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
