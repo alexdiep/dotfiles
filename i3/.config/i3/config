@@ -134,11 +134,6 @@ bindsym XF86AudioRaiseVolume exec --no-startup-id amixer set Master 5%+
 bindsym XF86AudioLowerVolume exec --no-startup-id amixer set Master 5%-
 bindsys XF86AudioMute exec --no-startup-id amixer set Master toggle
 
-# Player control for spotify and shit
-bindsym $mod+z exec --no-startup-id playerctl previous
-bindsym $mod+x exec --no-startup-id playerctl play-pause
-bindsym $mod+c exec --no-startup-id  playerctl next
-
 # Brightness control
 # Keyboard brightness control used as a hack
 bindsym XF86KbdBrightnessUp exec --no-startup-id xbacklight -inc 5
@@ -169,7 +164,7 @@ bar {
     status_command i3blocks
     i3bar_command i3bar -t
     position top
-    font xft:Hack 11px
+    font xft:Awesome 11px
     bindsym button4 nop
     bindsym button5 nop
     height 34
@@ -192,8 +187,8 @@ exec_always --no-startup-id feh --bg-fill $HOME/.config/wallpapers/spacingout.jp
 exec --no-startup-id compton -b
 
 exec --no-startup-id gnome-settings-daemon &
-exec --no-startup-id gnome-sound-applet &
-
 exec --no-startup-id nm-applet &
+
+exec --no-startup-id redshift &
 
 exec --no-startup-id dunst &
