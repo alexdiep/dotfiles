@@ -34,7 +34,7 @@ focus_on_window_activation urgent
 floating_minimum_size -1 x -1
 floating_maximum_size -1 x -1
 
-new_window pixel 100
+new_window pixel 1
 smart_borders on
 gaps inner 0
 gaps outer 0
@@ -156,7 +156,7 @@ bindsym XF86KbdBrightnessDown exec --no-startup-id xbacklight -dec 5
 
 # Colors
 #                       BORDER      BACKGROUND  TEXT        INDICATOR   CHILD_BORDER
-client.focused          $black      $black      $darkwhite  $darkblack  $darkblack
+client.focused          $black      $black      $darkwhite  $darkblack  $darkwhite
 client.unfocused        $black      $black      $white      $darkblack  $darkblack
 client.focused_inactive $black      $black      $white      $darkblack  $darkblack
 client.urgent           $darkred    $darkred    $black      $darkred    $darkred
