@@ -161,9 +161,10 @@ client.unfocused        $black      $black      $white      $darkblack  $darkbla
 client.focused_inactive $black      $black      $white      $darkblack  $darkblack
 client.urgent           $darkred    $darkred    $black      $darkred    $darkred
 client.background       $black
+
  
 bar {
-#    verbose yes
+    verbose yes
     status_command i3blocks
     i3bar_command i3bar -t
     position top

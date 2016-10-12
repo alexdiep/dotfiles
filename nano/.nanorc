@@ -10,7 +10,7 @@ set morespace
 set mouse
 
 ## Smooth scrolling
-set smooth
+#set smooth
 
 ## Don't wrap text at all.
 set nowrap
