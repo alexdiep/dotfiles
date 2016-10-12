@@ -23,6 +23,9 @@ alias tree='tree -C --dirsfirst'
 alias xclip='xclip -selection clip-board'
 alias rclone='rclone --stats 5s'
 
+# PDF launches in background
+pdf() { evince "$@" &> /dev/null & }
+
 ## Git aliases
 source $HOME/.git.plugin.zsh
 
