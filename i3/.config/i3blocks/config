@@ -37,16 +37,13 @@
 #command=/usr/lib/i3blocks/$BLOCK_NAME
 
 # Debian
-command=/usr/share/i3blocks/$BLOCK_NAME
+#command=/usr/share/i3blocks/$BLOCK_NAME
+
+# Makefile
+command=/usr/libexec/i3blocks/$BLOCK_NAME
 
 separator_block_width=15
 markup=none
-
-[mail]
-label=
-instance=~/.mail/Inbox
-command= ~/.bin/i3blocks-mail.sh
-interval=10
 
 [cpu_usage]
 label=
@@ -56,12 +53,6 @@ separator=false
 [temperature]
 label=
 interval=10
-
-[mediaplayer]
-label=
-command=mpc current
-interval=5
-signal=10
 
 [volume]
 label=
