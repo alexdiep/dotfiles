@@ -34,13 +34,13 @@
 # Each block command defaults to the script name to avoid boilerplate.
 
 # Archlinux
-#command=/usr/lib/i3blocks/$BLOCK_NAME
+command=/usr/lib/i3blocks/$BLOCK_NAME
 
 # Debian
 #command=/usr/share/i3blocks/$BLOCK_NAME
 
 # Makefile
-command=/usr/libexec/i3blocks/$BLOCK_NAME
+#command=/usr/libexec/i3blocks/$BLOCK_NAME
 
 separator_block_width=15
 markup=none
