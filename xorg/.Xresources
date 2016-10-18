@@ -1,7 +1,7 @@
 ! https://github.com/Airblader/dotfiles-manjaro/blob/master/.Xresources
 
 ! Font settings
-#Xft.dpi: 96
+! Xft.dpi: 96
 Xft.autohint: 0
 Xft.lcdfilter: lcddefault
 Xft.hintstyle: hintslight
@@ -50,8 +50,8 @@ rofi.fuzzy: false
 
 ! Colors
 ! === gruvbox color scheme ===
-*background: #1d2021
-*foreground: #ebdbb2
+URxvt*background: #1d2021
+URxvt*foreground: #ebdbb2
 ! Black + DarkGrey
 *color0:  #282828
 *color8:  #928374
