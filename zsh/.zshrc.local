@@ -26,8 +26,8 @@ alias rclone='rclone --stats 5s'
 # PDF launches in background
 pdf() { evince "$@" &> /dev/null & }
 
-# emac launches in background
-emacs() { emacs "$@" &> /dev/null & }
+# emacs launches in background
+emacs() { /bin/emacs "$@" &> /dev/null & }
 
 ## Git aliases
 source $HOME/.git.plugin.zsh
