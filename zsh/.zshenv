@@ -5,3 +5,5 @@ export EDITOR=nano
 export GOPATH=$HOME/go
 export PATH=$PATH:$GOROOT/bin:$GOPATH/bin
 
+export LABROOT='biolab:Zhoulab Team Folder/People/BioInfoUndergrads/Alex'
+export SCHOOL='drive:fall_2016'
