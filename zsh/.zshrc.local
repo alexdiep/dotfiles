@@ -35,3 +35,8 @@ source $HOME/.git.plugin.zsh
 # Fish like syntax highlightning
 #source $HOME/repos/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 source  /usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+
+# lol
+function whatthecommit() {
+  curl whatthecommit.com/index.txt
+}
