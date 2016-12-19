@@ -4,6 +4,7 @@
 
 set $mod Mod4
 set $terminal urxvt
+set $height 34
 
 set_from_resource $darkred     color1  #000000
 set_from_resource $red         color9  #000000
@@ -157,36 +158,27 @@ bindsym XF86KbdBrightnessDown exec --no-startup-id xbacklight -dec 5
 bindsym XF86MonBrightnessUp exec xbacklight -inc 5 # increase screen brightness
 bindsym XF86MonBrightnessDown exec xbacklight -dec 5 # decrease screen brightness
 
-# Colors
 #                       BORDER      BACKGROUND  TEXT        INDICATOR   CHILD_BORDER
-client.focused          $black      $black      $darkwhite  $darkblack  $darkwhite
-client.unfocused        $black      $black      $white      $darkblack  $darkblack
-client.focused_inactive $black      $black      $white      $darkblack  $darkblack
-client.urgent           $darkred    $darkred    $black      $darkred    $darkred
-client.background       $black
-
+client.background $black
  
 bar {
-    verbose yes
+  verbose yes
     status_command i3blocks
     i3bar_command i3bar -t
     position top
     font xft:Awesome 16px
     bindsym button4 nop
     bindsym button5 nop
-    height 34
-    colors {
-        statusline         $white
-        background         $transparent
-        separator          $transparent
-
-#                          BORDER       BACKGROUND   TEXT
-        focused_workspace  $darkwhite $transparent $darkwhite
-        inactive_workspace $transparent $transparent $white
-        active_workspace   $transparent $transparent $white
-        urgent_workspace   $darkred     $darkred     $transparent
-        binding_mode       $darkred     $darkred     $transparent
-    }
+    height $height
+  colors {
+    separator #dc322f
+    background #002b36
+    statusline #268bd2
+    focused_workspace #fdf6e3 #859900 #fdf6e3
+    active_workspace #fdf6e3 #6c71c4 #fdf6e3
+    inactive_workspace #586e75 #93a1a1 #002b36
+    urgent_workspace #d33682 #d33682 #fdf6e3
+  }
 }
 
 # AUTOSTART
@@ -200,3 +192,8 @@ exec --no-startup-id nm-applet &
 exec --no-startup-id redshift &
 
 exec --no-startup-id dunst &
+
+client.focused #859900 #859900 #fdf6e3 #6c71c4
+client.focused_inactive #073642 #073642 #eee8d5 #6c71c4
+client.unfocused #073642 #073642 #93a1a1 #586e75
+client.urgent #d33682 #d33682 #fdf6e3 #dc322f
