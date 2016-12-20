@@ -102,7 +102,7 @@ URxvt.clipboard.pastecmd: xclip -o -selection clipboard
 
 ! rofi
 rofi.modi: run
-rofi.font: Hack 11
+rofi.font: Hack 12 
 rofi.width: 100
 rofi.lines: 5
 rofi.columns: 1
