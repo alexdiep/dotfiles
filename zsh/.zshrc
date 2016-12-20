@@ -45,8 +45,9 @@ export ARCHFLAGS="-arch x86_64"
 
 # aliases
 # for some reason zshconfig="$EDITOR ~/.zshrc" doesn't work
-alias zshconfig="vim ~/.zshrc"
+alias stow="stow --ignore='^.*\.(bak)$'"
 alias tree="tree -I .git"
+alias zshconfig="vim ~/.zshrc"
 
 # syntax highlighting
 source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
