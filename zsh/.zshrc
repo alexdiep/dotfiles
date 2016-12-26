@@ -44,10 +44,11 @@ export EDITOR='vim'
 export ARCHFLAGS="-arch x86_64"
 
 # aliases
-# for some reason zshconfig="$EDITOR ~/.zshrc" doesn't work
 alias stow="stow --ignore='^.*\.(bak)$'"
 alias tree="tree -I .git"
+# for some reason zshconfig="$EDITOR ~/.zshrc" doesn't work
 alias zshconfig="vim ~/.zshrc"
+alias i3config="vim ~/.config/i3/config"
 
 # syntax highlighting
 source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
