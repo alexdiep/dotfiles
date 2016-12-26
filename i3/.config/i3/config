@@ -155,7 +155,7 @@ bar {
 }
 
 # AUTOSTART
-exec_always --no-startup-id feh --bg-fill $HOME/.wallpapers/taipei.jpg
+exec_always --no-startup-id feh --bg-fill $HOME/.wallpapers/spiritedaway.jpg
 exec --no-startup-id compton -b
 
 #exec --no-startup-id gnome-settings-daemon &
