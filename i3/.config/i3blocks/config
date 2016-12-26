@@ -9,35 +9,30 @@ border_bottom=2
 label=  
 command=sh /usr/lib/i3blocks/volume  
 interval=5
-signal=1
 border=#cc241d
 
 [disk]
 label=  
 command=sh /usr/lib/i3blocks/disk 
 interval=5
-signal=1
 border=#d79921
 
 [cpu]
 label= 
 command=perl /usr/lib/i3blocks/cpu_usage
 interval=5
-signal=1
 border=#b16286
 
 [memory]
 label= 
 command=sh /usr/lib/i3blocks/memory
 interval=5
-signal=1
 border=#98971a
 
 [battery]
 label= 
 command=perl /usr/lib/i3blocks/battery
 interval=5
-signal=1
 border=#D1C300
 
 [time]
