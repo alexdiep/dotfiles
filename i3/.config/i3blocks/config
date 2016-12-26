@@ -33,6 +33,13 @@ interval=5
 signal=1
 border=#98971a
 
+[battery]
+label= 
+command=perl /usr/lib/i3blocks/battery
+interval=5
+signal=1
+border=#D1C300
+
 [time]
 label=    
 command=echo "`date +'%a %d %b'` <b>`date +'%T'`</b> "; [[ -z "${BLOCK_BUTTON}" ]] || gsimplecal &
