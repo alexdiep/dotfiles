@@ -1,6 +1,13 @@
 #!/bin/bash
 
 PROGRAMS=(
+	     networkmanager
+	     ttf-dejavu
+	     ttf-hack
+	     urxvt-perls
+	     xclip
+	     xorg
+	     xorg-init
              acpid
              atool
              dunst
@@ -16,7 +23,6 @@ PROGRAMS=(
              rxvt-unicode
              stow
              tlp
-             xorg-xbacklight
              zsh
          )
 
