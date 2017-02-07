@@ -162,6 +162,7 @@ exec --no-startup-id compton -b
 exec --no-startup-id gnome-keyring-daemon &
 exec --no-startup-id nm-applet &
 
-exec --no-startup-id redshift &
+# Coords set to New York
+exec --no-startup-id redshift -l 40.7128:-74.0059 &
 
 exec --no-startup-id dunst &
