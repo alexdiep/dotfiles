@@ -1,6 +1,8 @@
 #!/bin/bash
 
 PROGRAMS=(
+	     acpi
+	     alsa-utils
 	     networkmanager
 	     ttf-dejavu
 	     ttf-hack
