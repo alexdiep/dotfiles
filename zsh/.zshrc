@@ -50,6 +50,8 @@ alias tree="tree -I .git"
 # for some reason zshconfig="$EDITOR ~/.zshrc" doesn't work
 alias zshconfig="vim ~/.zshrc"
 alias i3config="vim ~/.config/i3/config"
+# uses amix/vimrc
+alias vimconfig="vim ~/.vim_runtime/my_configs.vim"
 
 # syntax highlighting
 source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
