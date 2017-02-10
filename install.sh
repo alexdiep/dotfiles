@@ -26,6 +26,7 @@ PROGRAMS=(
              stow
              tlp
              zsh
+	     evince
          )
 
 
