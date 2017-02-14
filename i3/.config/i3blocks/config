@@ -10,7 +10,7 @@ border_bottom=2
 [volume]
 label=  
 command=sh /usr/lib/i3blocks/volume  
-interval=5
+interval=1
 border=#cc241d
 
 [disk]
