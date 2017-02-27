@@ -47,6 +47,7 @@ export ARCHFLAGS="-arch x86_64"
 # aliases
 alias stow="stow --ignore='^.*\.(bak)$'"
 alias tree="tree -I .git"
+alias updatemirrors="reflector --latest 200 --protocol http --protocol https --sort rate --save /etc/pacman.d/mirrorlist"
 # for some reason zshconfig="$EDITOR ~/.zshrc" doesn't work
 alias zshconfig="vim ~/.zshrc"
 alias i3config="vim ~/.config/i3/config"
