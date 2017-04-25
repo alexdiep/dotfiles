@@ -16,4 +16,5 @@ export SSH_AUTH_SOCK
 
 xrdb -load ~/.Xresources
 
-exec i3
+mkdir -p ~/.log
+exec i3 -V >> ~/.log/i3log-$(date +'%F-%k-%M-%S') 2>&1
