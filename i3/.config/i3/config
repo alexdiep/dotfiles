@@ -32,7 +32,7 @@ floating_modifier $mod
 focus_follows_mouse no
 
 # start a terminal
-bindsym $mod+Return exec --no-startup-id $terminal
+bindsym $mod+Return exec --no-startup-id i3-sensible-terminal
 
 # kill focused window
 bindsym $mod+q kill
@@ -137,7 +137,6 @@ bindsym XF86MonBrightnessDown exec xbacklight -dec 5 # decrease screen brightnes
 bar {
   verbose yes
     status_command i3blocks
-    i3bar_command i3bar -t
     position top
     font xft:Awesome 16px
     bindsym button4 nop
@@ -158,9 +157,10 @@ bar {
 exec_always --no-startup-id feh --bg-fill $HOME/.wallpapers/taipei.jpg
 exec --no-startup-id compton -b
 
-#exec --no-startup-id gnome-settings-daemon &
+exec --no-startup-id gnome-settings-daemon &
 exec --no-startup-id gnome-keyring-daemon &
 exec --no-startup-id nm-applet &
+exec --no-startup-id udiskie &
 
 # Coords set to New York
 exec --no-startup-id redshift -l 40.7128:-74.0059 &
