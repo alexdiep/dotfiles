@@ -44,10 +44,13 @@ export LANG=en_US.UTF-8
 export EDITOR='vim'
 export ARCHFLAGS="-arch x86_64"
 
+#sudo trick
+alias sudo="sudo "
+
 # aliases
 alias stow="stow --ignore='^.*\.(bak)$'"
 alias tree="tree -I .git"
-alias updatemirrors="reflector --verbose --latest 200 --protocol http --protocol https --sort rate --save /etc/pacman.d/mirrorlist"
+alias updatemirrors="reflector --verbose -c US -p https -f 5 --save /etc/pacman.d/mirrorlist"
 # for some reason zshconfig="$EDITOR ~/.zshrc" doesn't work
 alias zshconfig="vim ~/.zshrc"
 alias i3config="vim ~/.config/i3/config"
