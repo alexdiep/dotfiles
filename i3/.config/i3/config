@@ -134,6 +134,12 @@ bindsym XF86KbdBrightnessDown exec --no-startup-id xbacklight -dec 5
 bindsym XF86MonBrightnessUp exec xbacklight -inc 5 # increase screen brightness
 bindsym XF86MonBrightnessDown exec xbacklight -dec 5 # decrease screen brightness
 
+# Make the currently focused window a scratchpad
+bindsym $mod+Shift+m move scratchpad
+
+# Show the first scratchpad window
+bindsym $mod+m scratchpad show
+
 bar {
   verbose yes
     status_command i3blocks
@@ -158,7 +164,7 @@ exec_always --no-startup-id feh --bg-fill $HOME/.wallpapers/taipei.jpg
 exec --no-startup-id compton -b
 
 exec --no-startup-id gnome-settings-daemon &
-exec --no-startup-id gnome-keyring-daemon &
+
 exec --no-startup-id nm-applet &
 exec --no-startup-id udiskie &
 
