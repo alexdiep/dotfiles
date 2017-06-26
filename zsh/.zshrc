@@ -30,11 +30,8 @@ plugins=(git
          sudo
          common-aliases
          python
-         pyenv
          pylint
-         pip
-         virtualenvwrapper
-         web-search)
+         pip)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -56,6 +53,7 @@ alias zshconfig="vim ~/.zshrc"
 alias i3config="vim ~/.config/i3/config"
 # uses amix/vimrc
 alias vimconfig="vim ~/.vim_runtime/my_configs.vim"
+
 
 # syntax highlighting
 source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
