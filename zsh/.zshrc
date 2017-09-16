@@ -27,6 +27,8 @@ plugins=(git
 source $ZSH/oh-my-zsh.sh
 
 # User configuration
+# Because npm brings pain and suffering to my life
+export PATH=~/.npm-global/bin:$PATH
 
 export LANG=en_US.UTF-8
 export EDITOR='vim'
