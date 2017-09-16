@@ -9,11 +9,6 @@ set $height 34
 # Font
 font xft:Hack 11px
 
-smart_borders on
-smart_gaps on
-gaps inner 5
-gaps outer 5
-
 new_window pixel 1
 
 for_window [class="urxvt"] border pixel 3
@@ -142,12 +137,11 @@ bindsym $mod+m scratchpad show
 
 bar {
   verbose yes
-    status_command i3blocks
+    status_command i3status
     position top
     font xft:Awesome 16px
     bindsym button4 nop
     bindsym button5 nop
-    height $height
   colors {
     separator #dc322f
     background #002b36
