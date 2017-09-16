@@ -30,7 +30,6 @@ source $ZSH/oh-my-zsh.sh
 # Because npm brings pain and suffering to my life
 export PATH=~/.npm-global/bin:$PATH
 
-export LANG=en_US.UTF-8
 export EDITOR='vim'
 export ARCHFLAGS="-arch x86_64"
 
