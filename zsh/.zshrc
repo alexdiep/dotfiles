@@ -48,6 +48,8 @@ alias zshconfig="vim ~/.zshrc"
 alias i3config="vim ~/.config/i3/config"
 # uses amix/vimrc
 alias vimconfig="vim ~/.vim_runtime/my_configs.vim"
+# MAXIMUM OVERDRIVE
+alias maxspeed="echo 255 | sudo tee /sys/devices/platform/i8042/serio1/serio2/speed | sudo tee /sys/devices/platform/i8042/serio1/serio2/sensitivity"
 
 
 # syntax highlighting
