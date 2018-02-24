@@ -33,6 +33,8 @@ export PATH=~/.npm-global/bin:$PATH
 export EDITOR='vim'
 export ARCHFLAGS="-arch x86_64"
 
+export WINEARCH='win32'
+
 #sudo trick
 alias sudo="sudo "
 
