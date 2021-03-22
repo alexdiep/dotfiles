@@ -1,6 +1,6 @@
 # Path to your oh-my-zsh installation.
 # This breaks whenever you change users. Need to fix...
-export ZSH=/home/adiep/.oh-my-zsh
+export ZSH=/home/$USER/.oh-my-zsh
 
 ZSH_THEME="robbyrussell"
 
